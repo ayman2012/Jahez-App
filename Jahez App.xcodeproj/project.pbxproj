@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		752201E82E04751300438E5C /* Jahez_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752201E72E04751300438E5C /* Jahez_AppApp.swift */; };
+		752201EA2E04751300438E5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752201E92E04751300438E5C /* ContentView.swift */; };
+		752201EC2E04751700438E5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752201EB2E04751700438E5C /* Assets.xcassets */; };
+		752201EF2E04751700438E5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752201EE2E04751700438E5C /* Preview Assets.xcassets */; };
+		752201F92E04751700438E5C /* Jahez_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752201F82E04751700438E5C /* Jahez_AppTests.swift */; };
+		752202032E04751700438E5C /* Jahez_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752202022E04751700438E5C /* Jahez_AppUITests.swift */; };
+		752202052E04751700438E5C /* Jahez_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752202042E04751700438E5C /* Jahez_AppUITestsLaunchTests.swift */; };
+		752202122E04768F00438E5C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752202112E04768F00438E5C /* NetworkManager.swift */; };
+		752202152E0477A300438E5C /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752202142E0477A300438E5C /* RequestBuilder.swift */; };
+		752202172E0477BB00438E5C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752202162E0477BB00438E5C /* APIConstants.swift */; };
+		752202192E0477D100438E5C /* NetworkFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752202182E0477D100438E5C /* NetworkFailure.swift */; };
+		7522021B2E0477E400438E5C /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522021A2E0477E400438E5C /* NetworkLogger.swift */; };
+		7522021D2E0477F900438E5C /* Pageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522021C2E0477F900438E5C /* Pageable.swift */; };
+		752202202E04783F00438E5C /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522021F2E04783F00438E5C /* Collection+Extension.swift */; };
+		752202222E04785600438E5C /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752202212E04785600438E5C /* UIImageView+Extension.swift */; };
+		752202242E04786B00438E5C /* Loadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752202232E04786B00438E5C /* Loadable.swift */; };
+		752202272E047A4500438E5C /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752202262E047A4500438E5C /* MovieListViewModel.swift */; };
+		752202292E047B0B00438E5C /* MovieListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752202282E047B0B00438E5C /* MovieListAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		752201F52E04751700438E5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 752201DC2E04751300438E5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 752201E32E04751300438E5C;
+			remoteInfo = "Jahez App";
+		};
+		752201FF2E04751700438E5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 752201DC2E04751300438E5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 752201E32E04751300438E5C;
+			remoteInfo = "Jahez App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		752201E42E04751300438E5C /* Jahez App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jahez App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		752201E72E04751300438E5C /* Jahez_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jahez_AppApp.swift; sourceTree = "<group>"; };
+		752201E92E04751300438E5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		752201EB2E04751700438E5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		752201EE2E04751700438E5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		752201F42E04751700438E5C /* Jahez AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jahez AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		752201F82E04751700438E5C /* Jahez_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jahez_AppTests.swift; sourceTree = "<group>"; };
+		752201FE2E04751700438E5C /* Jahez AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jahez AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		752202022E04751700438E5C /* Jahez_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jahez_AppUITests.swift; sourceTree = "<group>"; };
+		752202042E04751700438E5C /* Jahez_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jahez_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		752202112E04768F00438E5C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		752202142E0477A300438E5C /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		752202162E0477BB00438E5C /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		752202182E0477D100438E5C /* NetworkFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFailure.swift; sourceTree = "<group>"; };
+		7522021A2E0477E400438E5C /* NetworkLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		7522021C2E0477F900438E5C /* Pageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pageable.swift; sourceTree = "<group>"; };
+		7522021F2E04783F00438E5C /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		752202212E04785600438E5C /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		752202232E04786B00438E5C /* Loadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loadable.swift; sourceTree = "<group>"; };
+		752202262E047A4500438E5C /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		752202282E047B0B00438E5C /* MovieListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		752201E12E04751300438E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		752201F12E04751700438E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		752201FB2E04751700438E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		752201DB2E04751300438E5C = {
+			isa = PBXGroup;
+			children = (
+				752201E62E04751300438E5C /* Jahez App */,
+				752201F72E04751700438E5C /* Jahez AppTests */,
+				752202012E04751700438E5C /* Jahez AppUITests */,
+				752201E52E04751300438E5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		752201E52E04751300438E5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				752201E42E04751300438E5C /* Jahez App.app */,
+				752201F42E04751700438E5C /* Jahez AppTests.xctest */,
+				752201FE2E04751700438E5C /* Jahez AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		752201E62E04751300438E5C /* Jahez App */ = {
+			isa = PBXGroup;
+			children = (
+				7522021E2E04782000438E5C /* Modules */,
+				752201E72E04751300438E5C /* Jahez_AppApp.swift */,
+				752201E92E04751300438E5C /* ContentView.swift */,
+				752201EB2E04751700438E5C /* Assets.xcassets */,
+				752201ED2E04751700438E5C /* Preview Content */,
+			);
+			path = "Jahez App";
+			sourceTree = "<group>";
+		};
+		752201ED2E04751700438E5C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				752201EE2E04751700438E5C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		752201F72E04751700438E5C /* Jahez AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				752201F82E04751700438E5C /* Jahez_AppTests.swift */,
+			);
+			path = "Jahez AppTests";
+			sourceTree = "<group>";
+		};
+		752202012E04751700438E5C /* Jahez AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				752202022E04751700438E5C /* Jahez_AppUITests.swift */,
+				752202042E04751700438E5C /* Jahez_AppUITestsLaunchTests.swift */,
+			);
+			path = "Jahez AppUITests";
+			sourceTree = "<group>";
+		};
+		752202132E0476BD00438E5C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				752202112E04768F00438E5C /* NetworkManager.swift */,
+				752202142E0477A300438E5C /* RequestBuilder.swift */,
+				752202162E0477BB00438E5C /* APIConstants.swift */,
+				752202182E0477D100438E5C /* NetworkFailure.swift */,
+				7522021A2E0477E400438E5C /* NetworkLogger.swift */,
+				7522021C2E0477F900438E5C /* Pageable.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7522021E2E04782000438E5C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				752202132E0476BD00438E5C /* Network */,
+				752202252E04788200438E5C /* Extensions */,
+				752202262E047A4500438E5C /* MovieListViewModel.swift */,
+				752202282E047B0B00438E5C /* MovieListAPI.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		752202252E04788200438E5C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7522021F2E04783F00438E5C /* Collection+Extension.swift */,
+				752202212E04785600438E5C /* UIImageView+Extension.swift */,
+				752202232E04786B00438E5C /* Loadable.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		752201E32E04751300438E5C /* Jahez App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 752202082E04751700438E5C /* Build configuration list for PBXNativeTarget "Jahez App" */;
+			buildPhases = (
+				752201E02E04751300438E5C /* Sources */,
+				752201E12E04751300438E5C /* Frameworks */,
+				752201E22E04751300438E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jahez App";
+			productName = "Jahez App";
+			productReference = 752201E42E04751300438E5C /* Jahez App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		752201F32E04751700438E5C /* Jahez AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7522020B2E04751700438E5C /* Build configuration list for PBXNativeTarget "Jahez AppTests" */;
+			buildPhases = (
+				752201F02E04751700438E5C /* Sources */,
+				752201F12E04751700438E5C /* Frameworks */,
+				752201F22E04751700438E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				752201F62E04751700438E5C /* PBXTargetDependency */,
+			);
+			name = "Jahez AppTests";
+			productName = "Jahez AppTests";
+			productReference = 752201F42E04751700438E5C /* Jahez AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		752201FD2E04751700438E5C /* Jahez AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7522020E2E04751700438E5C /* Build configuration list for PBXNativeTarget "Jahez AppUITests" */;
+			buildPhases = (
+				752201FA2E04751700438E5C /* Sources */,
+				752201FB2E04751700438E5C /* Frameworks */,
+				752201FC2E04751700438E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				752202002E04751700438E5C /* PBXTargetDependency */,
+			);
+			name = "Jahez AppUITests";
+			productName = "Jahez AppUITests";
+			productReference = 752201FE2E04751700438E5C /* Jahez AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		752201DC2E04751300438E5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					752201E32E04751300438E5C = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					752201F32E04751700438E5C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 752201E32E04751300438E5C;
+					};
+					752201FD2E04751700438E5C = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 752201E32E04751300438E5C;
+					};
+				};
+			};
+			buildConfigurationList = 752201DF2E04751300438E5C /* Build configuration list for PBXProject "Jahez App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 752201DB2E04751300438E5C;
+			productRefGroup = 752201E52E04751300438E5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				752201E32E04751300438E5C /* Jahez App */,
+				752201F32E04751700438E5C /* Jahez AppTests */,
+				752201FD2E04751700438E5C /* Jahez AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		752201E22E04751300438E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				752201EF2E04751700438E5C /* Preview Assets.xcassets in Resources */,
+				752201EC2E04751700438E5C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		752201F22E04751700438E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		752201FC2E04751700438E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		752201E02E04751300438E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				752202222E04785600438E5C /* UIImageView+Extension.swift in Sources */,
+				7522021B2E0477E400438E5C /* NetworkLogger.swift in Sources */,
+				752202292E047B0B00438E5C /* MovieListAPI.swift in Sources */,
+				752202122E04768F00438E5C /* NetworkManager.swift in Sources */,
+				7522021D2E0477F900438E5C /* Pageable.swift in Sources */,
+				752202172E0477BB00438E5C /* APIConstants.swift in Sources */,
+				752201EA2E04751300438E5C /* ContentView.swift in Sources */,
+				752202192E0477D100438E5C /* NetworkFailure.swift in Sources */,
+				752201E82E04751300438E5C /* Jahez_AppApp.swift in Sources */,
+				752202242E04786B00438E5C /* Loadable.swift in Sources */,
+				752202202E04783F00438E5C /* Collection+Extension.swift in Sources */,
+				752202152E0477A300438E5C /* RequestBuilder.swift in Sources */,
+				752202272E047A4500438E5C /* MovieListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		752201F02E04751700438E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				752201F92E04751700438E5C /* Jahez_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		752201FA2E04751700438E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				752202032E04751700438E5C /* Jahez_AppUITests.swift in Sources */,
+				752202052E04751700438E5C /* Jahez_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		752201F62E04751700438E5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 752201E32E04751300438E5C /* Jahez App */;
+			targetProxy = 752201F52E04751700438E5C /* PBXContainerItemProxy */;
+		};
+		752202002E04751700438E5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 752201E32E04751300438E5C /* Jahez App */;
+			targetProxy = 752201FF2E04751700438E5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		752202062E04751700438E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		752202072E04751700438E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		752202092E04751700438E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jahez App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jahez.Jahez-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7522020A2E04751700438E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Jahez App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jahez.Jahez-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7522020C2E04751700438E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jahez.Jahez-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jahez App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jahez App";
+			};
+			name = Debug;
+		};
+		7522020D2E04751700438E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jahez.Jahez-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jahez App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Jahez App";
+			};
+			name = Release;
+		};
+		7522020F2E04751700438E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jahez.Jahez-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Jahez App";
+			};
+			name = Debug;
+		};
+		752202102E04751700438E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jahez.Jahez-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Jahez App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		752201DF2E04751300438E5C /* Build configuration list for PBXProject "Jahez App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				752202062E04751700438E5C /* Debug */,
+				752202072E04751700438E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		752202082E04751700438E5C /* Build configuration list for PBXNativeTarget "Jahez App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				752202092E04751700438E5C /* Debug */,
+				7522020A2E04751700438E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7522020B2E04751700438E5C /* Build configuration list for PBXNativeTarget "Jahez AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7522020C2E04751700438E5C /* Debug */,
+				7522020D2E04751700438E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7522020E2E04751700438E5C /* Build configuration list for PBXNativeTarget "Jahez AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7522020F2E04751700438E5C /* Debug */,
+				752202102E04751700438E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 752201DC2E04751300438E5C /* Project object */;
+}
