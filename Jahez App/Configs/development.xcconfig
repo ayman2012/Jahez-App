@@ -1,0 +1,13 @@
+//
+//  development.xcconfig
+//  Jahez App
+//
+//  Created by Ayman Fathy on 19/06/2025.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+BASE_URL=api.themoviedb.org/3
+APIKay = c9856d0cb57c3f14bf75bdc6c063b8f3

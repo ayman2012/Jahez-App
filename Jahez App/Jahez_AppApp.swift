@@ -11,7 +11,7 @@ import SwiftUI
 struct Jahez_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MovieListView(viewModel: MovieListViewModel(repository: MovieRepository()))
         }
     }
 }
