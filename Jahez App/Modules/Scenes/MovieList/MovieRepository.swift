@@ -11,7 +11,6 @@ import Combine
 protocol MovieRepositoryProtocol {
     func fetchTrendingMovies(page: Int) -> AnyPublisher<[Movie], Error>
     func fetchGenres() -> AnyPublisher<[Genre], Error>
-    func fetchMovieDetails(id: Int) -> AnyPublisher<MovieDetail, Error>
 }
 
 final class MovieRepository: MovieRepositoryProtocol {
@@ -30,8 +29,7 @@ final class MovieRepository: MovieRepositoryProtocol {
     
     func fetchTrendingMovies(page: Int) -> AnyPublisher<[Movie], Error> {
         
-        let cacheKey = "trending_movies_page_\(page)"
-        if let cached = cacheService.load(forKey: cacheKey, type: [Movie].self) {
+        if let cached = cacheService.load(forKey: "\(CacheKeys.trendingMoviesPage.rawValue)\(page)", type: [Movie].self) {
             return Just(cached)
                 .setFailureType(to: Error.self)
                 .eraseToAnyPublisher()
@@ -48,7 +46,7 @@ final class MovieRepository: MovieRepositoryProtocol {
         return networkService.request(request)
             .map { (response: MovieListResponse) in
                 let movies = response.results
-                self.cacheService.save(movies, forKey: cacheKey)
+                self.cacheService.save(movies, forKey: "\(CacheKeys.trendingMoviesPage.rawValue)\(page)")
                 return movies
             }
             .eraseToAnyPublisher()
@@ -71,10 +69,5 @@ final class MovieRepository: MovieRepositoryProtocol {
                 return genres
             }
             .eraseToAnyPublisher()
-    }
-    
-    func fetchMovieDetails(id: Int) -> AnyPublisher<MovieDetail, Error> {
-        let url = URL(string: "https://\(baseURL)/movie/\(id)?api_key=\(APIKay)")!
-        return networkService.request(URLRequest(url: url))
     }
 }

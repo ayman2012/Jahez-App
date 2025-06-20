@@ -7,20 +7,84 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "52EBB066-084D-4100-9F61-52FA6CCFDFFA"
+            uuid = "2F53F437-472D-4DA8-BF30-F5B98EBB8247"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Jahez App/Modules/Scenes/MovieList/URLSession.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60F115D8-8B85-4CF4-ACA7-8EAB124F731D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Jahez App/Modules/Network/CacheService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "load(forKey:type:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5885B9F-EBED-413D-B7B7-A8E052041BA2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Jahez App/Modules/Network/CacheService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "load(forKey:type:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56E358E6-8184-4D48-B967-0F71F60A9489"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Jahez App/Modules/Network/CacheService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "load(forKey:type:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F86530FF-0CBA-43CC-BE88-BFA244EB0ECC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Jahez App/Modules/Scenes/MovieList/MovieRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "fetchTrendingMovies(page:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "52EBB066-084D-4100-9F61-52FA6CCFDFFA - d1ac7e47871601a7"
+                  uuid = "F86530FF-0CBA-43CC-BE88-BFA244EB0ECC - d1ac7e4787160123"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -30,12 +94,12 @@
                   urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieList/MovieRepository.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "528">
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "696">
                </Location>
                <Location
-                  uuid = "52EBB066-084D-4100-9F61-52FA6CCFDFFA - d1ac7e47871601a7"
+                  uuid = "F86530FF-0CBA-43CC-BE88-BFA244EB0ECC - d1ac7e4787160123"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -45,9 +109,9 @@
                   urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieList/MovieRepository.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "520">
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "1452">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -55,15 +119,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DD9CAB01-91F7-4034-8FEF-2AFD8EFBEA8F"
+            uuid = "AE59393F-D395-4D61-9CAE-A7D0479135E0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Jahez App/Modules/Scenes/MovieList/MovieRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "fetchTrendingMovies(page:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -71,16 +135,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "874F6D4A-A564-49CE-98CB-D8CCC306AB72"
+            uuid = "7D17F348-348F-47CE-9334-73FC4B841603"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Jahez App/Modules/Scenes/MovieList/MovieRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "fetchTrendingMovies(page:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB98C3C1-5AC5-407E-8D01-38ED9C8D919F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Jahez App/Modules/Scenes/MovieList/MovieRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "fetchTrendingMovies(page:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0A4C13F2-450B-40F5-ACEC-8C07C073352F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Jahez App/Modules/Scenes/MovieList/MovieRepository.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "fetchGenres()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

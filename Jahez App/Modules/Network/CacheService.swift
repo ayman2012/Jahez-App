@@ -14,7 +14,7 @@ protocol CacheServiceProtocol {
 
 final class CacheService: CacheServiceProtocol {
     private let defaults = UserDefaults.standard
-    private let expirationInterval: TimeInterval = 7 * 24 * 60 * 60 // 1 week
+    private let expirationInterval: TimeInterval = 5 // 7 * 24 * 60 * 60 // 1 week
 
     func save<T: Codable>(_ data: T, forKey key: String) {
         let wrapper = CacheWrapper(data: data, timestamp: Date())

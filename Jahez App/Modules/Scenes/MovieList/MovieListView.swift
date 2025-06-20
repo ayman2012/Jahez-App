@@ -7,6 +7,41 @@
 
 import Foundation
 import SwiftUI
+struct MovieCardView: View {
+    let movie: Movie
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 4) {
+            AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w500\(movie.posterPath ?? "")")) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(height: 180)
+                    .clipped()
+            } placeholder: {
+                Rectangle()
+                    .fill(Color.gray.opacity(0.3))
+                    .frame(height: 180)
+            }
+            .cornerRadius(8)
+
+            Text(movie.title)
+                .font(.headline)
+                .foregroundStyle(.white)
+                .lineLimit(1)
+                .multilineTextAlignment(.leading)
+                .padding([.vertical, .leading], 10)
+
+            Text(String(movie.releaseDate.prefix(4)))
+                .font(.caption)
+                .foregroundColor(.gray)
+                .padding([.bottom, .leading], 10)
+
+        }
+        .background(Color.gray.opacity(0.3))
+        .cornerRadius(8)
+    }
+}
 
 struct MovieListView: View {
     @StateObject var viewModel: MovieListViewModel
@@ -28,35 +63,23 @@ struct MovieListView: View {
                 GenreFilterView(genres: viewModel.genres, selected: $viewModel.selectedGenreIDs)
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 16) {
-                        ForEach(Array(viewModel.filteredMovies.enumerated()), id: \.element.id) { index, movie in            let movie = viewModel.filteredMovies[index]
-                            VStack(alignment: .leading, spacing: 4) {
-                                AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w500\(movie.posterPath ?? "")")) { image in
-                                    image
-                                        .resizable()
-                                        .aspectRatio(contentMode: .fill)
-                                        .frame(height: 180)
-                                        .clipped()
-                                } placeholder: {
-                                    Rectangle()
-                                        .fill(Color.gray.opacity(0.3))
-                                        .frame(height: 180)
-                                }
-                                Text(movie.title)
-                                    .font(.headline)
-                                    .lineLimit(1)
-                                Text(String(movie.releaseDate.prefix(4)))
-                                    .font(.caption)
-                                    .foregroundColor(.gray)
+                        ForEach(Array(viewModel.filteredMovies.enumerated()), id: \.element.id) { index, movie in
+                            NavigationLink(
+                                destination: MovieDetailView(
+                                    viewModel: MovieDetailViewModel(
+                                        repository: MovieDetailsRepository(),
+                                        movieId: movie.id
+                                    )
+                                )
+                            ) {
+                                MovieCardView(movie: movie)
                             }
-                            .background(Color.black)
-                            .cornerRadius(8)
                             .onAppear {
                                 if index == viewModel.filteredMovies.count - 1 {
                                     viewModel.fetchMovies()
                                 }
                             }
-                        }
-                    }
+                        }                    }
                     .padding()
                 }
             }
