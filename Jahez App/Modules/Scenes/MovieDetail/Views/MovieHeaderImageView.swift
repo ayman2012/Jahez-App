@@ -16,7 +16,6 @@ struct MovieHeaderImageView: View {
             AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w500\(posterPath)")) { image in
                 image
                     .resizable()
-                    .aspectRatio(contentMode: .fill)
                     .frame(height: 300)
                     .clipped()
             } placeholder: {

@@ -23,95 +23,77 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "60F115D8-8B85-4CF4-ACA7-8EAB124F731D"
+            uuid = "7061AEBE-38F0-40C2-B455-A821E984ED2A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Jahez App/Modules/Network/CacheService.swift"
+            filePath = "Jahez App/Modules/Scenes/MovieDetail/Views/MovieDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "load(forKey:type:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C5885B9F-EBED-413D-B7B7-A8E052041BA2"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Jahez App/Modules/Network/CacheService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "load(forKey:type:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "56E358E6-8184-4D48-B967-0F71F60A9489"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Jahez App/Modules/Network/CacheService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "load(forKey:type:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "F86530FF-0CBA-43CC-BE88-BFA244EB0ECC"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Jahez App/Modules/Scenes/MovieList/MovieRepository.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "fetchTrendingMovies(page:)"
-            landmarkType = "7">
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "body"
+            landmarkType = "24">
             <Locations>
                <Location
-                  uuid = "F86530FF-0CBA-43CC-BE88-BFA244EB0ECC - d1ac7e4787160123"
+                  uuid = "7061AEBE-38F0-40C2-B455-A821E984ED2A - 3e111a9d76f5a61f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Jahez_App.MovieRepository.fetchTrendingMovies(page: Swift.Int) -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;Jahez_App.Movie&gt;, Swift.Error&gt;"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt;&gt;, Swift.Optional&lt;Jahez_App.LoadingView&gt;)&gt; in Jahez_App.MovieDetailView.body.getter : some"
                   moduleName = "Jahez App"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieList/MovieRepository.swift"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieDetail/Views/MovieDetailView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "696">
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "484">
                </Location>
                <Location
-                  uuid = "F86530FF-0CBA-43CC-BE88-BFA244EB0ECC - d1ac7e4787160123"
+                  uuid = "7061AEBE-38F0-40C2-B455-A821E984ED2A - 1877dddff6be1f38"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Jahez_App.MovieRepository.fetchTrendingMovies(page: Swift.Int) -&gt; Combine.AnyPublisher&lt;Swift.Array&lt;Jahez_App.Movie&gt;, Swift.Error&gt;"
+                  symbolName = "closure #1 () -&gt; Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt;&gt;&gt;, Swift.Optional&lt;Jahez_App.LoadingView&gt;)&gt; in Jahez_App.MovieDetailView.body.getter : some"
                   moduleName = "Jahez App"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieList/MovieRepository.swift"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieDetail/Views/MovieDetailView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "32"
-                  endingLineNumber = "32"
-                  offsetFromSymbolStart = "1452">
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "456">
+               </Location>
+               <Location
+                  uuid = "7061AEBE-38F0-40C2-B455-A821E984ED2A - 5310954cbc556b4b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;, SwiftUI.Text&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;, SwiftUI.Text&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;, SwiftUI.Text&gt;&gt;&gt;, Swift.Optional&lt;Jahez_App.LoadingView&gt;)&gt; in Jahez_App.MovieDetailView.body.getter : some"
+                  moduleName = "Jahez App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieDetail/Views/MovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "524">
+               </Location>
+               <Location
+                  uuid = "7061AEBE-38F0-40C2-B455-A821E984ED2A - fbdf4204ad8ff40e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt; in closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;Jahez_App.LoadingView, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0&gt;, SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt;&gt;&gt; in Jahez_App.MovieDetailView.body.getter : some"
+                  moduleName = "Jahez App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieDetail/Views/MovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "248">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -119,65 +101,269 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AE59393F-D395-4D61-9CAE-A7D0479135E0"
+            uuid = "8D001534-ED43-4A1C-8D16-09BFA02C4FE5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Jahez App/Modules/Scenes/MovieList/MovieRepository.swift"
+            filePath = "Jahez App/Modules/Scenes/MovieDetail/Views/MovieDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "fetchTrendingMovies(page:)"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "8D001534-ED43-4A1C-8D16-09BFA02C4FE5 - 3e111a9d76f5a678"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt;&gt;, Swift.Optional&lt;Jahez_App.LoadingView&gt;)&gt; in Jahez_App.MovieDetailView.body.getter : some"
+                  moduleName = "Jahez App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieDetail/Views/MovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "608">
+               </Location>
+               <Location
+                  uuid = "8D001534-ED43-4A1C-8D16-09BFA02C4FE5 - 1877dddff6be1f5f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt;&gt;&gt;, Swift.Optional&lt;Jahez_App.LoadingView&gt;)&gt; in Jahez_App.MovieDetailView.body.getter : some"
+                  moduleName = "Jahez App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieDetail/Views/MovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "716">
+               </Location>
+               <Location
+                  uuid = "8D001534-ED43-4A1C-8D16-09BFA02C4FE5 - 5310954cbc556b2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;, SwiftUI.Text&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;, SwiftUI.Text&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;, SwiftUI.Text&gt;&gt;&gt;, Swift.Optional&lt;Jahez_App.LoadingView&gt;)&gt; in Jahez_App.MovieDetailView.body.getter : some"
+                  moduleName = "Jahez App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieDetail/Views/MovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "784">
+               </Location>
+               <Location
+                  uuid = "8D001534-ED43-4A1C-8D16-09BFA02C4FE5 - fbdf4204ad8ff4ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt; in closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;Jahez_App.LoadingView, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0&gt;, SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt;&gt;&gt; in Jahez_App.MovieDetailView.body.getter : some"
+                  moduleName = "Jahez App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieDetail/Views/MovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "484">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27667965-9AC9-4467-BE75-CEE9FF22A151"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Jahez App/Modules/Scenes/MovieDetail/Views/MovieDetailView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "27667965-9AC9-4467-BE75-CEE9FF22A151 - 1877dddff6be1f19"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt;&gt;&gt;, Swift.Optional&lt;Jahez_App.LoadingView&gt;)&gt; in Jahez_App.MovieDetailView.body.getter : some"
+                  moduleName = "Jahez App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieDetail/Views/MovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "288">
+               </Location>
+               <Location
+                  uuid = "27667965-9AC9-4467-BE75-CEE9FF22A151 - 5310954cbc556b6a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;, SwiftUI.Text&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;, SwiftUI.Text&gt;&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;, SwiftUI.Text&gt;&gt;&gt;, Swift.Optional&lt;Jahez_App.LoadingView&gt;)&gt; in Jahez_App.MovieDetailView.body.getter : some"
+                  moduleName = "Jahez App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieDetail/Views/MovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "27667965-9AC9-4467-BE75-CEE9FF22A151 - fbdf4204ad8ff40e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt; in closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;Jahez_App.LoadingView, &lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0&gt;, SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieHeaderImageView, Jahez_App.MovieSummaryView, Jahez_App.MovieOverviewView, SwiftUI.Spacer, Jahez_App.MovieHomepageView, SwiftUI.VStack&lt;Swift.Optional&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(Jahez_App.MovieInfoView, Jahez_App.MovieInfoView)&gt;&gt;)&gt;&gt;&gt;)&gt;&gt;&gt;&gt; in Jahez_App.MovieDetailView.body.getter : some"
+                  moduleName = "Jahez App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieDetail/Views/MovieDetailView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "248">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ED85119A-4B88-42FE-9D8B-9D4C87089AC6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Jahez App/Modules/Network/CacheService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "load(forKey:type:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7D17F348-348F-47CE-9334-73FC4B841603"
+            uuid = "8DF1F1AC-2CE1-408D-BDF1-E98E3A448768"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Jahez App/Modules/Scenes/MovieList/MovieRepository.swift"
+            filePath = "Jahez App/Modules/Scenes/MovieDetail/MovieDetailsRepository.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "fetchTrendingMovies(page:)"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "fetchMovieDetails(id:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8DF1F1AC-2CE1-408D-BDF1-E98E3A448768 - 5f94efd0a082ac75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Jahez_App.MovieDetailsRepository.fetchMovieDetails(id: Swift.Int) -&gt; Combine.AnyPublisher&lt;Jahez_App.MovieDetailDTO, Swift.Error&gt;"
+                  moduleName = "Jahez App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieDetail/MovieDetailsRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "560">
+               </Location>
+               <Location
+                  uuid = "8DF1F1AC-2CE1-408D-BDF1-E98E3A448768 - 5f94efd0a082ac75"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Jahez_App.MovieDetailsRepository.fetchMovieDetails(id: Swift.Int) -&gt; Combine.AnyPublisher&lt;Jahez_App.MovieDetailDTO, Swift.Error&gt;"
+                  moduleName = "Jahez App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieDetail/MovieDetailsRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "2300">
+               </Location>
+               <Location
+                  uuid = "8DF1F1AC-2CE1-408D-BDF1-E98E3A448768 - fdf0818caa1da846"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Jahez_App.MovieDetailsRepository.fetchMovieDetails(id: Swift.Int) -&gt; Combine.AnyPublisher&lt;Swift.Optional&lt;Jahez_App.MovieDetailDTO&gt;, Swift.Error&gt;"
+                  moduleName = "Jahez App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieDetail/MovieDetailsRepository.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "532">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FB98C3C1-5AC5-407E-8D01-38ED9C8D919F"
+            uuid = "303A4585-D697-4157-8E7E-A9DB343A3F97"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Jahez App/Modules/Scenes/MovieList/MovieRepository.swift"
+            filePath = "Jahez App/Modules/Scenes/MovieList/Views/MovieListView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "fetchTrendingMovies(page:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "0A4C13F2-450B-40F5-ACEC-8C07C073352F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Jahez App/Modules/Scenes/MovieList/MovieRepository.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "fetchGenres()"
-            landmarkType = "7">
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "303A4585-D697-4157-8E7E-A9DB343A3F97 - 9aeb663ba1e9955e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI._ConditionalContent&lt;&lt;&lt;opaque return type of SwiftUI.View.background&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ShapeStyle&gt;(_: &#x3c4;_1_0, ignoresSafeAreaEdges: SwiftUI.Edge.Set) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.navigationBarHidden(Swift.Bool) -&gt; some&gt;&gt;.0&gt;, Swift.Optional&lt;Jahez_App.LoadingView&gt;)&gt; in Jahez_App.MovieListView.body.getter : some"
+                  moduleName = "Jahez App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieList/Views/MovieListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "1340">
+               </Location>
+               <Location
+                  uuid = "303A4585-D697-4157-8E7E-A9DB343A3F97 - be36754deac10d4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI._ConditionalContent&lt;SwiftUI.Text, &lt;&lt;opaque return type of SwiftUI.View.navigationBarHidden(Swift.Bool) -&gt; some&gt;&gt;.0&gt;, Swift.Optional&lt;Jahez_App.LoadingView&gt;)&gt; in Jahez_App.MovieListView.body.getter : some"
+                  moduleName = "Jahez App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aymanfathy/Desktop/Jahez%20App/Jahez%20App/Modules/Scenes/MovieList/Views/MovieListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "1348">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

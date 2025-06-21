@@ -1,5 +1,5 @@
 //
-//  MovieListResponse.swift
+//  MovieListResponseDTO.swift
 //  Jahez App
 //
 //  Created by Ayman Fathy on 19/06/2025.
@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct MovieListResponse: Codable {
+struct MovieListResponseDTO: Codable {
     let page: Int
-    let results: [Movie]
+    let results: [MovieDTO]
 }
 
-struct Movie: Identifiable, Codable {
+struct MovieDTO: Identifiable, Codable {
     let id: Int
     let title: String
     let originalTitle: String
@@ -27,6 +27,10 @@ struct Movie: Identifiable, Codable {
     let adult: Bool
     let video: Bool
     let genreIds: [Int]
+    var posterFullPath: String {
+        "https://image.tmdb.org/t/p/w500\(posterPath ?? "")"
+    }
+
     
     enum CodingKeys: String, CodingKey {
         case id, title, overview, adult, video, popularity, voteCount = "vote_count", voteAverage = "vote_average"

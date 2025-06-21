@@ -8,12 +8,6 @@
 import Foundation
 import Combine
 
-enum Environment {
-    case develop
-    case staging
-    case production
-}
-
 protocol NetworkManagerProtocol {
     func request<T: Decodable>(_ endpoint: URLRequest) -> AnyPublisher<T, Error>
 }
@@ -33,6 +27,13 @@ class NetworkManager: NetworkManagerProtocol {
             })
             .map { $0.data }
             .decode(type: T.self, decoder: JSONDecoder())
+            .handleEvents(receiveCompletion: { completion in
+                if case let .failure(error) = completion {
+                    if let decodingError = error as? DecodingError {
+                        NetworkLogger.log(error: NetworkFailure.failedToParseData)
+                    }
+                }
+            })
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }

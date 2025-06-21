@@ -9,8 +9,9 @@ import Foundation
 import Combine
 
 final class MovieDetailViewModel: ObservableObject {
-    @Published var movieDetail: MovieDetail?
+    @Published var movieDetail: MovieDetailDTO?
     @Published var isLoading = false
+    @Published var error: Error?
 
     private let repository: MovieDetailsRepositoryProtocol
     private var cancellables = Set<AnyCancellable>()
@@ -23,8 +24,12 @@ final class MovieDetailViewModel: ObservableObject {
     func fetchMovieDetails(id: Int) {
         isLoading = true
         repository.fetchMovieDetails(id: id)
-            .sink(receiveCompletion: { [weak self] _ in
+            .sink(receiveCompletion: { [weak self] completion in
                 self?.isLoading = false
+
+                if case let .failure(error) = completion {
+                    self?.error = error
+                }
             }, receiveValue: { [weak self] detail in
                 self?.movieDetail = detail
             })

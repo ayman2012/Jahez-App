@@ -1,5 +1,5 @@
 //
-//  MovieDetail.swift
+//  MovieDetailDTO.swift
 //  Jahez App
 //
 //  Created by Ayman Fathy on 19/06/2025.
@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct MovieDetail: Decodable {
+struct MovieDetailDTO: Codable {
     let adult: Bool
     let backdropPath: String
     let belongsToCollection: BelongsToCollection?
     let budget: Int
-    let genres: [Genre]
+    let genres: [GenreDTO]
     let homepage: String?
     let id: Int
     let imdbID: String
@@ -66,7 +66,7 @@ struct MovieDetail: Decodable {
 }
 
 struct BelongsToCollection: Codable {
-    let backdropPath: String
+    let backdropPath: String?
     let id: Int
     let name: String
     let posterPath: String?
@@ -105,7 +105,7 @@ struct ProductionCountry: Codable {
 
 struct SpokenLanguage: Codable {
     let englishName: String
-    let iso639_1: String
+    let iso639_1: String?
     let name: String
     
     enum CodingKeys: String, CodingKey {

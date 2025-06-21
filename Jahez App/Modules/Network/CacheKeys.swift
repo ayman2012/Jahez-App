@@ -9,4 +9,5 @@ import Foundation
 enum CacheKeys: String {
     case trendingMoviesPage
     case movieGenres
+    case movieDetails
 }

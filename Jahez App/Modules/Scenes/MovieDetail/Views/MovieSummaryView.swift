@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct MovieSummaryView: View {
-    let movie: MovieDetail?
+    let movie: MovieDetailDTO?
 
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
