@@ -7,6 +7,7 @@
 
 ## 🧱 Architecture Overview
 ![Architecture Overview](/jahez_app_architecture_diagram.png)
+
 The app is structured using the **MVVM (Model-View-ViewModel)** architecture pattern, ensuring a clear separation of concerns:
 
 - **View**: SwiftUI-based UI components observing ViewModels.
@@ -40,7 +41,7 @@ Jahez App/
 
 ## 🔁 Data Flow Sequence
 
-![Sequence Diagram](/sequence_diagram.png)
+![Sequence Diagram](/Sequence_Diagram.png)
 
 1. `Jahez_AppApp.swift` initializes the app.
 2. The root `View` communicates with its `ViewModel`.
