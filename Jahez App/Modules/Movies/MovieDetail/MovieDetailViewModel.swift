@@ -35,7 +35,7 @@ final class MovieDetailViewModel: ObservableObject {
         }
     }
 
-    func fetchMovieDetails(id: Int) {
+   private func fetchMovieDetails(id: Int) {
         isLoading = true
         repository.fetchMovieDetails(id: id)
             .sink(receiveCompletion: { [weak self] completion in

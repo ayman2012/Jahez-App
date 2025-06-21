@@ -13,9 +13,11 @@ import XCTest
 final class MovieDetailViewModeTests: XCTestCase {
     var movieDetailViewModel: MovieDetailViewModel!
     var movieDetailMockRepo: MovieDetailMockRepo!
+    var movieDetailMockFailureRepo: MovieDetailMockRepo!
 
     override func setUpWithError() throws {
         movieDetailMockRepo = MovieDetailMockRepo()
+        movieDetailMockFailureRepo = MovieDetailMockRepo()
         movieDetailViewModel = MovieDetailViewModel(repository: movieDetailMockRepo, movieId: 1)
     }
 
@@ -24,8 +26,14 @@ final class MovieDetailViewModeTests: XCTestCase {
         movieDetailMockRepo = nil
     }
 
-    func testFetchMovieDetails() {
-        movieDetailViewModel.fetchMovieDetails(id: 1)
+    func testFetchMovieDetailsWithSuccess() {
+        movieDetailViewModel.trigger(.fetchDetails)
         XCTAssertEqual(movieDetailViewModel.movieDetail?.title ?? "", "Mock Movie Title")
+    }
+    
+    func testFetchMovieDetailsWithFailure() {
+        movieDetailViewModel = MovieDetailViewModel(repository: MovieDetailMockFailureRepo(), movieId: 1)
+        movieDetailViewModel.trigger(.fetchDetails)
+        XCTAssertNotNil(movieDetailViewModel.error)
     }
 }

@@ -1,5 +1,5 @@
 //
-//  MovieDetail.swift
+//  MovieDetailMock.swift
 //  Jahez AppTests
 //
 //  Created by Ayman Fathy on 21/06/2025.
