@@ -40,7 +40,7 @@ Jahez App/
 
 ## 🔁 Data Flow Sequence
 
-![Sequence Diagram](../jahez_app_architecture_diagram.png)
+![Sequence Diagram](/jahez_app_architecture_diagram.png)
 
 1. `Jahez_AppApp.swift` initializes the app.
 2. The root `View` communicates with its `ViewModel`.
