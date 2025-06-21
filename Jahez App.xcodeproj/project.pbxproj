@@ -39,6 +39,9 @@
 		7522026A2E06F35100438E5C /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752202692E06F35100438E5C /* MovieDetail.swift */; };
 		7522026C2E06F37500438E5C /* MovieDetailMockRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522026B2E06F37500438E5C /* MovieDetailMockRepo.swift */; };
 		7522026E2E06F39A00438E5C /* MovieDetailViewModeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522026D2E06F39A00438E5C /* MovieDetailViewModeTests.swift */; };
+		752202712E06FCAA00438E5C /* Jahez-App-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 752202702E06FCAA00438E5C /* Jahez-App-Info.plist */; };
+		752202732E06FF7500438E5C /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752202722E06FF7500438E5C /* SearchBarView.swift */; };
+		752202752E06FF8D00438E5C /* GenreFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752202742E06FF8D00438E5C /* GenreFilterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +81,6 @@
 		752202372E04888600438E5C /* MovieListResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponseDTO.swift; sourceTree = "<group>"; };
 		7522023B2E048A9B00438E5C /* development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = development.xcconfig; sourceTree = "<group>"; };
 		7522023C2E048AAE00438E5C /* production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = production.xcconfig; sourceTree = "<group>"; };
-		7522023D2E048B9200438E5C /* Jahez-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Jahez-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		7522023F2E04A28200438E5C /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
 		752202432E04AA1E00438E5C /* CacheKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheKeys.swift; sourceTree = "<group>"; };
 		7522024A2E04B06200438E5C /* MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModel.swift; sourceTree = "<group>"; };
@@ -97,6 +99,9 @@
 		752202692E06F35100438E5C /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		7522026B2E06F37500438E5C /* MovieDetailMockRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailMockRepo.swift; sourceTree = "<group>"; };
 		7522026D2E06F39A00438E5C /* MovieDetailViewModeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewModeTests.swift; sourceTree = "<group>"; };
+		752202702E06FCAA00438E5C /* Jahez-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "Jahez-App-Info.plist"; path = "Jahez App/Supporting Files/Jahez-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		752202722E06FF7500438E5C /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		752202742E06FF8D00438E5C /* GenreFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreFilterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,12 +152,8 @@
 		752201E62E04751300438E5C /* Jahez App */ = {
 			isa = PBXGroup;
 			children = (
-				7522023D2E048B9200438E5C /* Jahez-App-Info.plist */,
-				752201E72E04751300438E5C /* Jahez_AppApp.swift */,
 				7522021E2E04782000438E5C /* Modules */,
-				7522023E2E048C3800438E5C /* Configs */,
-				752201EB2E04751700438E5C /* Assets.xcassets */,
-				752201ED2E04751700438E5C /* Preview Content */,
+				7522026F2E06FBC100438E5C /* Supporting Files */,
 			);
 			path = "Jahez App";
 			sourceTree = "<group>";
@@ -264,6 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				7522022A2E047CB300438E5C /* MovieListView.swift */,
+				752202742E06FF8D00438E5C /* GenreFilterView.swift */,
+				752202722E06FF7500438E5C /* SearchBarView.swift */,
 				752202612E06B40D00438E5C /* LoadingView.swift */,
 				7522025F2E06B28200438E5C /* MovieCardView.swift */,
 			);
@@ -278,6 +281,18 @@
 				752202312E04873A00438E5C /* GenreResponseDTO.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		7522026F2E06FBC100438E5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				752201ED2E04751700438E5C /* Preview Content */,
+				752202702E06FCAA00438E5C /* Jahez-App-Info.plist */,
+				752201E72E04751300438E5C /* Jahez_AppApp.swift */,
+				7522023E2E048C3800438E5C /* Configs */,
+				752201EB2E04751700438E5C /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				752201EF2E04751700438E5C /* Preview Assets.xcassets in Resources */,
+				752202712E06FCAA00438E5C /* Jahez-App-Info.plist in Resources */,
 				752201EC2E04751700438E5C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,11 +442,13 @@
 				752202122E04768F00438E5C /* NetworkManager.swift in Sources */,
 				752202532E06172500438E5C /* MovieHeaderImageView.swift in Sources */,
 				752202642E06C28200438E5C /* ReachabilityService.swift in Sources */,
+				752202752E06FF8D00438E5C /* GenreFilterView.swift in Sources */,
 				752202512E0612B300438E5C /* MovieDetailsRepository.swift in Sources */,
 				7522025B2E06178800438E5C /* MovieInfoView.swift in Sources */,
 				752202592E06177500438E5C /* MovieHomepageView.swift in Sources */,
 				752202192E0477D100438E5C /* NetworkFailure.swift in Sources */,
 				752201E82E04751300438E5C /* Jahez_AppApp.swift in Sources */,
+				752202732E06FF7500438E5C /* SearchBarView.swift in Sources */,
 				752202362E0487D900438E5C /* MovieDetailDTO.swift in Sources */,
 				7522024B2E04B06200438E5C /* MovieDetailViewModel.swift in Sources */,
 				752202602E06B28200438E5C /* MovieCardView.swift in Sources */,
@@ -603,10 +621,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Jahez App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Jahez App/Supporting Files/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Jahez-App-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Jahez App/Supporting Files/Jahez-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -632,10 +650,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Jahez App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Jahez App/Supporting Files/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Jahez-App-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Jahez App/Supporting Files/Jahez-App-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
