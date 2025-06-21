@@ -16,29 +16,29 @@ protocol MovieRepositoryProtocol {
 
 // MARK: - MovieRepository
 final class MovieRepository: MovieRepositoryProtocol {
-    
+
     // MARK: - Properties
     private let networkService: NetworkManagerProtocol
     private let cacheService: CacheServiceProtocol
     private let baseURL = Bundle.main.object(forInfoDictionaryKey: "BASE_URL") as? String ?? "No base URl Found"
     private let APIKay = Bundle.main.object(forInfoDictionaryKey: "APIKay") as? String ?? "No APIKay Found"
-    
+
     // MARK: - initialization
     init(networkService: NetworkManagerProtocol = NetworkManager(),
          cacheService: CacheServiceProtocol = CacheService()) {
         self.networkService = networkService
         self.cacheService = cacheService
     }
-    
+
     // MARK: - MovieRepositoryProtocol Implementation
     func fetchTrendingMovies(page: Int) -> AnyPublisher<[MovieDTO]?, Error> {
         if ReachabilityService.shared.isConnected {
-            
+
             guard let urlRequest = buildTrendingMoviesRequest(page: page) else {
                 return Fail(error: NetworkFailure.generalFailure)
                     .eraseToAnyPublisher()
             }
-            
+
             return networkService.request(urlRequest)
                 .map { (response: MovieListResponseDTO) in
                     let movies = response.results
@@ -46,7 +46,7 @@ final class MovieRepository: MovieRepositoryProtocol {
                     return movies
                 }
                 .eraseToAnyPublisher()
-            
+
         } else {
             let cached = cacheService.load(forKey: "\(CacheKeys.trendingMoviesPage.rawValue)\(page)", type: [MovieDTO].self)
             return Just(cached)
@@ -54,7 +54,7 @@ final class MovieRepository: MovieRepositoryProtocol {
                 .eraseToAnyPublisher()
         }
     }
-    
+
     func fetchGenres() -> AnyPublisher<[GenreDTO]?, Error> {
         if ReachabilityService.shared.isConnected {
             var components = URLComponents(string: "https://\(baseURL)/genre/movie/list")!
@@ -74,7 +74,7 @@ final class MovieRepository: MovieRepositoryProtocol {
                 .eraseToAnyPublisher()
         }
     }
-    
+
     private func buildTrendingMoviesRequest(page: Int) -> URLRequest? {
         var components = URLComponents(string: "https://\(baseURL)/discover/movie")!
         components.queryItems = [

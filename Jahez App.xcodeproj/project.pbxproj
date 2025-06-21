@@ -152,6 +152,7 @@
 		752201E62E04751300438E5C /* Jahez App */ = {
 			isa = PBXGroup;
 			children = (
+				752202132E0476BD00438E5C /* Network */,
 				7522021E2E04782000438E5C /* Modules */,
 				7522026F2E06FBC100438E5C /* Supporting Files */,
 			);
@@ -201,19 +202,9 @@
 		7522021E2E04782000438E5C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				752202132E0476BD00438E5C /* Network */,
-				752202392E0488F100438E5C /* Scenes */,
+				752202772E071EFE00438E5C /* Movies */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		752202392E0488F100438E5C /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				7522023A2E04890300438E5C /* MovieList */,
-				752202492E04B05300438E5C /* MovieDetail */,
-			);
-			path = Scenes;
 			sourceTree = "<group>";
 		};
 		7522023A2E04890300438E5C /* MovieList */ = {
@@ -222,7 +213,7 @@
 				752202262E047A4500438E5C /* MovieListViewModel.swift */,
 				7522022F2E04866900438E5C /* MovieRepository.swift */,
 				752202672E06C96200438E5C /* Views */,
-				752202682E06C96C00438E5C /* Models */,
+				752202682E06C96C00438E5C /* DTO */,
 			);
 			path = MovieList;
 			sourceTree = "<group>";
@@ -242,7 +233,7 @@
 				7522024A2E04B06200438E5C /* MovieDetailViewModel.swift */,
 				752202502E0612B300438E5C /* MovieDetailsRepository.swift */,
 				7522025E2E06ADB000438E5C /* Views */,
-				752202352E0487D900438E5C /* MovieDetailDTO.swift */,
+				752202762E071ECA00438E5C /* DTO */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -273,14 +264,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		752202682E06C96C00438E5C /* Models */ = {
+		752202682E06C96C00438E5C /* DTO */ = {
 			isa = PBXGroup;
 			children = (
 				7522022D2E04843F00438E5C /* GenreDTO.swift */,
 				752202372E04888600438E5C /* MovieListResponseDTO.swift */,
 				752202312E04873A00438E5C /* GenreResponseDTO.swift */,
 			);
-			path = Models;
+			path = DTO;
 			sourceTree = "<group>";
 		};
 		7522026F2E06FBC100438E5C /* Supporting Files */ = {
@@ -293,6 +284,23 @@
 				752201EB2E04751700438E5C /* Assets.xcassets */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		752202762E071ECA00438E5C /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				752202352E0487D900438E5C /* MovieDetailDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		752202772E071EFE00438E5C /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				7522023A2E04890300438E5C /* MovieList */,
+				752202492E04B05300438E5C /* MovieDetail */,
+			);
+			path = Movies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -619,9 +627,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jahez App/Supporting Files/Preview Content\"";
+				DEVELOPMENT_TEAM = 8D93MAVT5Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Jahez App/Supporting Files/Jahez-App-Info.plist";
@@ -637,6 +647,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Jahez.Jahez-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -648,9 +659,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Jahez App/Supporting Files/Preview Content\"";
+				DEVELOPMENT_TEAM = 8D93MAVT5Q;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Jahez App/Supporting Files/Jahez-App-Info.plist";
@@ -666,6 +679,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Jahez.Jahez-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
