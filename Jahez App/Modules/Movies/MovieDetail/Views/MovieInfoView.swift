@@ -19,7 +19,7 @@ struct MovieInfoView: View {
                 .bold()
                 .lineLimit(1)
                 .foregroundColor(.white)
-            
+
             Text(value)
                 .font(.caption2)
                 .foregroundColor(.white)

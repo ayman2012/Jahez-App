@@ -13,12 +13,12 @@ protocol NetworkManagerProtocol {
 }
 
 class NetworkManager: NetworkManagerProtocol {
-    
+
     // MARK: - Network call
     func request<T: Decodable>(_ endpoint: URLRequest) -> AnyPublisher<T, Error> {
-        
+
         NetworkLogger.log(request: endpoint)
-        
+
         return URLSession.shared.dataTaskPublisher(for: endpoint)
             .handleEvents(receiveOutput: { output in
                 if let response = output.response as? HTTPURLResponse {

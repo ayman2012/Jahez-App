@@ -11,7 +11,7 @@ import SwiftUI
 struct GenreFilterView: View {
     let genres: [GenreDTO]
     @Binding var selected: Set<Int>
-    
+
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 8) {

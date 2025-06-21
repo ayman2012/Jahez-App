@@ -12,13 +12,27 @@ final class MovieDetailViewModel: ObservableObject {
     @Published var movieDetail: MovieDetailDTO?
     @Published var isLoading = false
     @Published var error: Error?
+    private let selectedMovieId: Int
 
     private let repository: MovieDetailsRepositoryProtocol
-    private var cancellables = Set<AnyCancellable>()
-
-    init(repository: MovieDetailsRepositoryProtocol, movieId: Int) {
+    private var cancellable = Set<AnyCancellable>()
+    enum Action {
+        case fetchDetails
+    }
+    init(
+        repository: MovieDetailsRepositoryProtocol,
+        movieId: Int
+    ) {
         self.repository = repository
-        fetchMovieDetails(id: movieId)
+        self.selectedMovieId = movieId
+
+    }
+
+    func trigger(_ action: Action) {
+        switch action {
+        case .fetchDetails:
+            fetchMovieDetails(id: selectedMovieId)
+        }
     }
 
     func fetchMovieDetails(id: Int) {
@@ -33,6 +47,6 @@ final class MovieDetailViewModel: ObservableObject {
             }, receiveValue: { [weak self] detail in
                 self?.movieDetail = detail
             })
-            .store(in: &cancellables)
+            .store(in: &cancellable)
     }
 }

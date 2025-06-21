@@ -8,48 +8,32 @@
 import Foundation
 import SwiftUI
 
-import SwiftUI
-
 struct MovieDetailView: View {
     @StateObject var viewModel: MovieDetailViewModel
     @State private var isShowingShareSheet = false
-    
+
     var body: some View {
         ZStack {
             if viewModel.isLoading {
                 LoadingView()
             } else if viewModel.movieDetail == nil {
-                Text("No Date :(")
-                    .background(Color.white)
+                contentUnavailable
             } else {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 16) {
-                        
+
                         MovieHeaderImageView(posterPath: viewModel.movieDetail?.posterPath)
                         MovieSummaryView(movie: viewModel.movieDetail)
                         MovieOverviewView(overview: viewModel.movieDetail?.overview)
-                        
+
                         Spacer(minLength: 60)
-                        
+
                         MovieHomepageView(homepage: viewModel.movieDetail?.homepage)
-                        
-                        VStack(alignment: .leading, spacing: 8) {
-                            
-                            if let movie = viewModel.movieDetail {
-                                MovieInfoView(title: "Languages", value: movie.spokenLanguages.map { $0.name }.joined(separator: ", "))
-                                HStack {
-                                    MovieInfoView(title: "Status", value: movie.status)
-                                    MovieInfoView(title: "Runtime", value: "\(movie.runtime) minutes")
-                                }
-                                HStack {
-                                    MovieInfoView(title: "Budget", value: "\(movie.budget) $")
-                                    MovieInfoView(title: "Revenue", value: "\(movie.revenue) $")
-                                }
-                            }
-                        }
+
+                        infoView
                     }
                 }
-               
+                .scrollBounceBehavior(.basedOnSize)
             }
         }
         .background(Color.black.ignoresSafeArea())
@@ -68,6 +52,35 @@ struct MovieDetailView: View {
             if let movie = viewModel.movieDetail {
                 let titleWithYear = "\(movie.title) (\(String(movie.releaseDate.prefix(4))))"
                 ShareSheet(items: [titleWithYear])
+            }
+        }
+        .onAppear {
+            viewModel.trigger(.fetchDetails)
+        }
+    }
+}
+extension MovieDetailView {
+    var contentUnavailable: some View {
+        ContentUnavailableView {
+            Text("No Available Content")
+        } description: {
+            Text("Try another Movie.")
+        }
+    }
+
+    var infoView: some View {
+        VStack(alignment: .leading, spacing: 8) {
+
+            if let movie = viewModel.movieDetail {
+                MovieInfoView(title: "Languages", value: movie.spokenLanguages.map { $0.name }.joined(separator: ", "))
+                HStack {
+                    MovieInfoView(title: "Status", value: movie.status)
+                    MovieInfoView(title: "Runtime", value: "\(movie.runtime) minutes")
+                }
+                HStack {
+                    MovieInfoView(title: "Budget", value: "\(movie.budget) $")
+                    MovieInfoView(title: "Revenue", value: "\(movie.revenue) $")
+                }
             }
         }
     }

@@ -9,24 +9,48 @@ import Foundation
 import Combine
 
 final class MovieListViewModel: ObservableObject {
-    @Published var movies: [MovieDTO] = []
+
+    enum Action {
+        case fetch
+        case loadMore(index: Int)
+    }
+
+    private var movies: [MovieDTO] = []
     @Published var genres: [GenreDTO] = []
     @Published var error: Error?
     @Published var searchText = ""
     @Published var selectedGenreIDs: Set<Int> = []
 
-    private let repository: MovieRepository
-    private var cancellables = Set<AnyCancellable>()
+    private let repository: MovieRepositoryProtocol
+    private var cancellable = Set<AnyCancellable>()
     private var currentPage = 1
     private(set) var isLoading = false
 
-    init(repository: MovieRepository) {
-        self.repository = repository
-        fetchGenres()
-        fetchMovies()
+    var filteredMovies: [MovieDTO] {
+        movies.filter { movie in
+            (searchText.isEmpty || movie.title.lowercased().contains(searchText.lowercased())) &&
+            (selectedGenreIDs.isEmpty || !Set(movie.genreIds).isDisjoint(with: selectedGenreIDs))
+        }
     }
 
-    func fetchGenres() {
+    init(repository: MovieRepositoryProtocol) {
+        self.repository = repository
+    }
+
+    func trigger(_ action: Action) {
+        switch action {
+        case .fetch:
+            fetchGenres()
+            fetchMovies()
+        case let .loadMore(index):
+            guard index == filteredMovies.count - 1 else {
+                return
+            }
+            fetchMovies()
+        }
+    }
+
+    private func fetchGenres() {
         isLoading = true
         repository.fetchGenres()
             .sink(receiveCompletion: { [weak self] completion in
@@ -37,10 +61,10 @@ final class MovieListViewModel: ObservableObject {
                 self?.genres = genres ?? []
                 self?.isLoading = false
             })
-            .store(in: &cancellables)
+            .store(in: &cancellable)
     }
 
-    func fetchMovies() {
+    private func fetchMovies() {
         isLoading = true
         repository.fetchTrendingMovies(page: currentPage)
             .sink(receiveCompletion: { [weak self] completion in
@@ -52,13 +76,6 @@ final class MovieListViewModel: ObservableObject {
                 self?.movies.append(contentsOf: movies ?? [])
                 self?.currentPage += 1
             })
-            .store(in: &cancellables)
-    }
-
-    var filteredMovies: [MovieDTO] {
-        movies.filter { movie in
-            (searchText.isEmpty || movie.title.lowercased().contains(searchText.lowercased())) &&
-            (selectedGenreIDs.isEmpty || !Set(movie.genreIds).isDisjoint(with: selectedGenreIDs))
-        }
+            .store(in: &cancellable)
     }
 }

@@ -31,7 +31,6 @@ struct MovieDTO: Identifiable, Codable {
         "https://image.tmdb.org/t/p/w500\(posterPath ?? "")"
     }
 
-    
     enum CodingKeys: String, CodingKey {
         case id, title, overview, adult, video, popularity, voteCount = "vote_count", voteAverage = "vote_average"
         case originalTitle = "original_title"

@@ -39,7 +39,7 @@ struct MovieListView: View {
                             .font(.title2)
                             .bold()
                             .foregroundColor(.yellow)
-                            .padding(.horizontal)
+                            .padding()
 
                         GenreFilterView(
                             genres: viewModel.genres,
@@ -60,16 +60,15 @@ struct MovieListView: View {
                                         MovieCardView(movie: movie)
                                     }
                                     .onAppear {
-                                        if index == viewModel.filteredMovies.count - 1 {
-                                            viewModel.fetchMovies()
-                                        }
+                                        viewModel.trigger(.loadMore(index: index))
+
                                     }
                                 }
                             }
                             .padding()
                         }
                     }
-                    .background(Color.black) 
+                    .background(Color.black)
                     .navigationBarHidden(true)
                 }
             }
@@ -77,6 +76,25 @@ struct MovieListView: View {
             if viewModel.isLoading {
                 LoadingView()
             }
+            if viewModel.filteredMovies.isEmpty {
+                contentUnavailable
+            }
+        }
+        .onAppear {
+            viewModel.trigger(.fetch)
+        }
+    }
+}
+
+extension MovieListView {
+    var contentUnavailable: some View {
+        ContentUnavailableView {
+            Label(
+                "No Movies for \"\(viewModel.searchText)\"",
+                systemImage: "magnifyingglass"
+            )
+        } description: {
+            Text("Try to search for another Hero.")
         }
     }
 }

@@ -18,12 +18,12 @@ final class MovieDetailViewModeTests: XCTestCase {
         movieDetailMockRepo = MovieDetailMockRepo()
         movieDetailViewModel = MovieDetailViewModel(repository: movieDetailMockRepo, movieId: 1)
     }
-    
+
     override func tearDownWithError() throws {
         movieDetailViewModel = nil
         movieDetailMockRepo = nil
     }
-    
+
     func testFetchMovieDetails() {
         movieDetailViewModel.fetchMovieDetails(id: 1)
         XCTAssertEqual(movieDetailViewModel.movieDetail?.title ?? "", "Mock Movie Title")
