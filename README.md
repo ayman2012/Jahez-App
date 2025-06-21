@@ -40,26 +40,33 @@ Jahez App/
 
 ## 🔁 Data Flow Sequence
 
-![Sequence Diagram](/jahez_app_architecture_diagram.png)
+![Sequence Diagram](/sequence diagram.png)
 
 1. `Jahez_AppApp.swift` initializes the app.
 2. The root `View` communicates with its `ViewModel`.
-3. ViewModel checks `CacheService` for local data.
-4. If cache is empty, `NetworkManager` performs an API call.
+3. ViewModel communicates with the Repository 
+4- The Repository  check the connectivity, and if connected then performs an API call through  `NetworkManager`
+4- If not connected, check `CacheService` for local data.
 5. Responses are logged and returned to the ViewModel.
 6. ViewModel updates the UI via state bindings.
 
 ---
 
-## 🧩 Class Relationship Diagram
+## 🧩 Dependency Flow:
 
-![Class Diagram](../jahez_app_class_diagram.png)
+![Dependency Flow](/Dependency Flow.png)
 
-The diagram illustrates interactions among:
-- `View`, `ViewModel`
-- `NetworkManager`, `CacheService`, `ReachabilityService`, `NetworkLogger`
+## Key Architecture Principles:
 
----
+1- Separation of Concerns: Each class has distinct responsibilities
+
+2- Single Source of Truth: Repository manages data origin (network/cache)
+
+3- Decoupled Components: Services are interchangeable and testable
+
+4- Unidirectional Data Flow: View → ViewModel → Repository → Services
+
+5- Centralized Logging: All components share same logger instance
 
 ## 🧪 Unit Testing
 
