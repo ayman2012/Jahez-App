@@ -110,6 +110,7 @@ Clone the repository and open the project in Xcode:
 
 ```bash
 git clone https://github.com/ayman2012/Jahez-App.git
+git checkout -b develop
 cd jahez-app
 open "Jahez App.xcodeproj"
 ```
@@ -124,12 +125,6 @@ Cmd + R
 
 ## 🧑‍💻 Author
 
-**Ayman F. Mohammed**  
+**Ayman Fathy Mohammed**  
 Senior iOS Engineer  
 [LinkedIn →](https://www.linkedin.com/in/aymanfathy)
-
----
-
-## 📌 License
-
-This project is proprietary and intended for internal use.
