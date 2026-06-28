@@ -9,13 +9,13 @@ import Foundation
 import Combine
 
 // MARK: - MovieRepositoryProtocol
-protocol MovieRepositoryProtocol {
+protocol MovieListRepositoryProtocol {
     func fetchTrendingMovies(page: Int) -> AnyPublisher<[MovieDTO]?, Error>
     func fetchGenres() -> AnyPublisher<[GenreDTO]?, Error>
 }
 
 // MARK: - MovieRepository
-final class MovieRepository: MovieRepositoryProtocol {
+final class MovieRepository: MovieListRepositoryProtocol {
 
     // MARK: - Properties
     private let networkService: NetworkManagerProtocol

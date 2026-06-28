@@ -21,7 +21,7 @@ final class MovieListViewModel: ObservableObject {
     @Published var searchText = ""
     @Published var selectedGenreIDs: Set<Int> = []
 
-    private let repository: MovieRepositoryProtocol
+    private let repository: MovieListRepositoryProtocol
     private var cancellable = Set<AnyCancellable>()
     private var currentPage = 1
     private(set) var isLoading = false
@@ -33,7 +33,7 @@ final class MovieListViewModel: ObservableObject {
         }
     }
 
-    init(repository: MovieRepositoryProtocol) {
+    init(repository: MovieListRepositoryProtocol) {
         self.repository = repository
     }
 
